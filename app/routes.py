@@ -53,3 +53,7 @@ def assistant():
             return jsonify({'error': 'Failed to get response from Groq'}), response.status_code
 
         return jsonify(response.json())
+
+# Adicione esta parte ao final do arquivo
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8002)
